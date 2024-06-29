@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Form.create(title: 'Customer Feedback', description: 'Help us improve our service')
+Form.first.questions.create(content: 'How satisfied are you with our service?', question_type: 'rating')
